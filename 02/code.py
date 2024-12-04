@@ -1,7 +1,7 @@
 import pandas as pd
 
 # read the file
-with open('input.txt', 'r') as file:
+with open('testinput.txt', 'r') as file:
     lines = file.readlines()
 
 data = []
@@ -55,3 +55,7 @@ for row in rows:
         safe_reports += 1
 
 print(f"{safe_reports}")
+
+# part 2
+# probably if failed_once create x new lists where each i has been popped
+# run loop again with each list, if 1 pass, break
